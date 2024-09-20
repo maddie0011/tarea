@@ -1,0 +1,75 @@
+.contenedor /*padre*/
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+
+    grid-template-areas: "header  header  header"
+                         "nav  nav  nav"
+                         "section  section  ads"
+                         "footer  footer  footer";
+}
+.contenedor .header
+{
+    background-color: bisque;
+    grid-column: header;
+    
+}
+.contenedor .nav
+{
+    background-color: yellow;
+    grid-column: nav;
+}
+.contenedor .section-1
+{
+    background-color: azure;
+    border: 4px black solid;
+    padding: 10px;
+    width: 400px;
+    font-size: 28px;
+    font-family: fantasy;
+}
+.contenedor .section-2
+{
+    background-color: azure;
+    border: 4px black solid;
+    padding: 10px;
+    width: 400px;  
+    font-size: 28px;
+    font-family: fantasy;
+}
+.contenedor .ads
+{
+    background-color: chartreuse;
+    grid-column: ads; 
+    width: 400px;
+    padding: 30px ;
+    grid-gap: 10px;
+    display: grid;
+    text-align: center;
+    grid-template-areas: "hijo-1"
+                         "hijo-2";                 
+}
+.contenedor .hijo-1
+{
+    background-color: royalblue;
+    width: 350px;
+    font-family: fantasy;
+    color: red;
+}
+.contenedor .hijo-2
+{
+    background-color: royalblue;
+    width: 350px;
+    font-family: fantasy;
+    color: red;
+}
+.contenedor .footer
+{
+    background-color: darkgoldenrod;
+    grid-column: footer;
+}
